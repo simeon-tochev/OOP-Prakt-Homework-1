@@ -92,7 +92,6 @@ int main()
     } else if(command[0] == '+'){
         com = 1;
     }
-
     /// Perform calculation
     switch(com){
     case 1:{
@@ -111,11 +110,17 @@ int main()
     case 3:{
         for(int i = 0; i < vectorCount; i++){
             cout << -vectors[i];
+            if(i != vectorCount-1){
+                cout<<" ";
+            }
         }break;
     }
     case 4:{
         for(int i = 0; i < vectorCount; i++){
             cout << vectors[i]*numb;
+            if(i != vectorCount-1){
+                cout<<" ";
+            }
         }break;
     }
     }
